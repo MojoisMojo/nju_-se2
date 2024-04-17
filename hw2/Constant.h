@@ -5,7 +5,9 @@
 #include <unordered_map>
 #include <vector>
 typedef std::unordered_map<std::string,std::string> Proporty;
+typedef std::string Content;
 typedef enum struct ParaType{
+    PARA_MODULE,
     PARA_MEASUREMENT,
     PARA_CHARACTERISTIC,
     PARA_UNDEFINED,

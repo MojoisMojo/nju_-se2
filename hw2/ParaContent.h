@@ -3,12 +3,17 @@
 #include "Constant.h"
 #include "Paragraph.h"
 
-class ParaContent{
+class ParaContent
+{
 protected:
-    Proporty proporty;
+    Proporty proporties;
     std::vector<Paragraph *> sonParas;
+    std::vector<Content> contents;
+    virtual void processLine(const std::string &);
+    virtual bool filter(const std::string &);
+
 public:
     ParaContent();
-    ParaContent(std::istream&);
+    ParaContent(std::istream &);
 };
 #endif
