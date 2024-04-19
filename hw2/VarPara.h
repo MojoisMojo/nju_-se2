@@ -14,7 +14,7 @@ protected:
     bool filter(ParaType) override;
 
 public:
-    VarPara(std::istream &);
+    VarPara(std::istream &, ParaType, BasePara *);
     ~VarPara();
 };
 #endif

@@ -2,7 +2,7 @@
 #define PARACONTENT_H
 #include "Constant.h"
 #include "BasePara.h"
-class StdPara
+class StdPara:public BasePara
 {
 protected:
     Proporty paraProporties;
@@ -12,8 +12,7 @@ protected:
     virtual bool filter(ParaType);
 
 public:
-    StdPara();
-    StdPara(std::istream &);
+    StdPara(std::istream &, ParaType, BasePara *);
     ~StdPara();
 };
 #endif

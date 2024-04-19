@@ -1,8 +1,8 @@
 #include "VarPara.h"
 #include "Utils.h"
 #include "Constant.h"
-VarPara::VarPara(std::istream &is)
-    : StdPara() // do nothing
+VarPara::VarPara(std::istream &is, ParaType pType, BasePara * pFather = nullptr)
+    : StdPara(is,pType,pFather) // do nothing
 {
     std::string line;
     while (getline(is, line))
