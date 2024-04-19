@@ -4,27 +4,29 @@
 #include <string>
 #include <unordered_map>
 #include <vector>
-typedef std::unordered_map<std::string,std::string> Proporty;
+typedef std::unordered_map<std::string, std::string> Proporty;
 typedef std::string Content;
-typedef enum struct ProcessCode {
+typedef enum struct ProcessCode
+{
     PROCESS_FAIL,
     PROCESS_END,
     PROCESS_CONTINUE,
-}ProcessCode;
-typedef enum struct ParaType{
+} ProcessCode;
+typedef enum struct ParaType
+{
     PARA_MEASUREMENT,
     PARA_CHARACTERISTIC,
     PARA_UNDEFINED,
-}ParaType;
+} ParaType;
 
 static const std::string PARA_TYPE_STRING[] = {
     "MEASUREMENT",
     "CHARACTERISTIC",
-    "UNDEFINED"
-};
+    "UNDEFINED"};
 
-static const std::string ParaTypeToString(ParaType ptype){
-    return PARA_TYPE_STRING[(int)(ptype)];
+static const std::string ParaTypeToString(ParaType pType)
+{
+    return PARA_TYPE_STRING[(int)(pType)];
 }
 
 #endif

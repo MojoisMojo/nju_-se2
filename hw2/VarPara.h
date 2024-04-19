@@ -1,16 +1,20 @@
 #ifndef VARCONTENT_H
 #define VARCONTENT_H
 #include "Constant.h"
-#include "ParaContent.h"
+#include "StdPara.h"
 
-class VarContent:public ParaContent{
+class VarPara : public StdPara
+{
 protected:
     std::string varName;
     std::string varIdentifier;
+
+protected:
     ProcessCode processLine(const std::string &) override;
     bool filter(ParaType) override;
+
 public:
-    VarContent(std::istream&);
-    ~VarContent();
+    VarPara(std::istream &);
+    ~VarPara();
 };
 #endif

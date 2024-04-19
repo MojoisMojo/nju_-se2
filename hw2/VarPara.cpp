@@ -1,8 +1,8 @@
-#include "VarContent.h"
+#include "VarPara.h"
 #include "Utils.h"
 #include "Constant.h"
-VarContent::VarContent(std::istream &is)
-    : ParaContent() // do nothing
+VarPara::VarPara(std::istream &is)
+    : StdPara() // do nothing
 {
     std::string line;
     while (getline(is, line))
@@ -13,12 +13,13 @@ VarContent::VarContent(std::istream &is)
         {
             continue;
         }
-        if(processLine(line) != ProcessCode::PROCESS_CONTINUE){
+        if (processLine(line) != ProcessCode::PROCESS_CONTINUE)
+        {
             return;
         }
     }
 }
-ProcessCode VarContent::processLine(const std::string &line)
+ProcessCode VarPara::processLine(const std::string &line)
 {
     if (line.substr(1, 5) == "begin") // begin
     {
@@ -52,11 +53,12 @@ ProcessCode VarContent::processLine(const std::string &line)
     }
     return ProcessCode::PROCESS_CONTINUE;
 }
-bool VarContent::filter(ParaType paraType)
+bool VarPara::filter(ParaType paraType)
 {
     return true;
 }
 
-VarContent::~VarContent(){
-
+VarPara::~VarPara()
+{
+    // do nothing
 }

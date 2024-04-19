@@ -1,20 +1,19 @@
 #ifndef PARACONTENT_H
 #define PARACONTENT_H
 #include "Constant.h"
-#include "Paragraph.h"
-
-class ParaContent
+#include "BasePara.h"
+class StdPara
 {
 protected:
     Proporty paraProporties;
-    std::vector<Paragraph *> paraSonParas;
+    std::vector<BasePara *> paraSonParas;
     std::vector<Content> paraContents;
     virtual ProcessCode processLine(const std::string &);
     virtual bool filter(ParaType);
 
 public:
-    ParaContent();
-    ParaContent(std::istream &);
-    ~ParaContent();
+    StdPara();
+    StdPara(std::istream &);
+    ~StdPara();
 };
 #endif
