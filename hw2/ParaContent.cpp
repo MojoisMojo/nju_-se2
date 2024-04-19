@@ -7,3 +7,7 @@ ParaContent::ParaContent(std::istream &is)
 {
 
 }
+
+ParaContent::~ParaContent() {
+    
+}

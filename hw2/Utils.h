@@ -10,7 +10,21 @@ void myTrim(std::string& str) {
 }
 
 // 将 形如"/* xxx xxxx        */ xxxxxx" \
-格式化为 pair{xxx xxxx, xxxxxx}
+格式化为 pair{xxx xxxx, xxxxxx} \
+如果没有 注释 first = NULL
 std::pair<std::string,std::string> formatToKeyValue(const std::string text){
 
+}
+
+bool isName(const std::string & token) 
+{
+
+}
+
+bool isIdentfier(const std::string & token) {
+
+}
+
+ParaType string2ParaType(const std::string & paraTypeString) {
+    
 }

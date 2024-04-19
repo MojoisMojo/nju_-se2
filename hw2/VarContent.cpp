@@ -1,5 +1,6 @@
 #include "VarContent.h"
 #include "Utils.h"
+#include "Constant.h"
 VarContent::VarContent(std::istream &is)
     : ParaContent() // do nothing
 {
@@ -12,24 +13,50 @@ VarContent::VarContent(std::istream &is)
         {
             continue;
         }
-        if (line[1] == '*') // property
-        {
-            auto p = formatToKeyValue(line);
-            proporties[p.first] = p.second;
-        }
-        else if (line.substr(1, 5) == "begin") // begin
-        {
-            // sonParas.push_back();
-        }
-        else if (line.substr(1, 3) == "end") // end
-        {
+        if(processLine(line) != ProcessCode::PROCESS_CONTINUE){
             return;
         }
     }
 }
-void VarContent::processLine(const std::string & line) {
+ProcessCode VarContent::processLine(const std::string &line)
+{
+    if (line.substr(1, 5) == "begin") // begin
+    {
+        std::string paraType = line.substr(6);
+        // paraSonParas.push_back();
+    }
+    else if (line.substr(1, 3) == "end") // end
+    {
+        return ProcessCode::PROCESS_END;
+    }
+    else
+    {
 
+        auto p = formatToKeyValue(line);
+        if (p.first.empty())
+        {
+            paraContents.push_back(p.second);
+        }
+        else
+        {
+            paraProporties[p.first] = p.second;
+            if (isName(p.first))
+            {
+                varName = p.second;
+            }
+            else if (isIdentfier(p.first))
+            {
+                varIdentifier = p.second;
+            }
+        }
+    }
+    return ProcessCode::PROCESS_CONTINUE;
 }
-bool VarContent::filter(const std::string & paraType) {
+bool VarContent::filter(ParaType paraType)
+{
     return true;
+}
+
+VarContent::~VarContent(){
+
 }

@@ -6,14 +6,15 @@
 class ParaContent
 {
 protected:
-    Proporty proporties;
-    std::vector<Paragraph *> sonParas;
-    std::vector<Content> contents;
-    virtual void processLine(const std::string &);
-    virtual bool filter(const std::string &);
+    Proporty paraProporties;
+    std::vector<Paragraph *> paraSonParas;
+    std::vector<Content> paraContents;
+    virtual ProcessCode processLine(const std::string &);
+    virtual bool filter(ParaType);
 
 public:
     ParaContent();
     ParaContent(std::istream &);
+    ~ParaContent();
 };
 #endif

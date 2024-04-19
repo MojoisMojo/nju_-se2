@@ -5,9 +5,12 @@
 
 class VarContent:public ParaContent{
 protected:
-    void processLine(const std::string &) override;
-    bool filter(const std::string &) override;
+    std::string varName;
+    std::string varIdentifier;
+    ProcessCode processLine(const std::string &) override;
+    bool filter(ParaType) override;
 public:
     VarContent(std::istream&);
+    ~VarContent();
 };
 #endif
