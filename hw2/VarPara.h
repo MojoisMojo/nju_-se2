@@ -1,5 +1,5 @@
-#ifndef VARCONTENT_H
-#define VARCONTENT_H
+#ifndef VAR_PARA_H
+#define VAR_PARA_H
 #include "Constant.h"
 #include "StdPara.h"
 
@@ -14,7 +14,7 @@ protected:
     bool filter(ParaType) override;
 
 public:
-    VarPara(std::istream &, ParaType, BasePara *);
+    VarPara(ParaType, BasePara *);
     ~VarPara();
 };
 #endif

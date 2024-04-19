@@ -3,7 +3,7 @@
 BasePara::BasePara(){
     
 }
-BasePara::BasePara(std::istream &is, ParaType pType, BasePara *pFather = nullptr)
+BasePara::BasePara(ParaType pType, BasePara *pFather = nullptr)
     : pType(pType), pFather(pFather)
 {
 }

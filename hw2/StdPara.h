@@ -1,5 +1,5 @@
-#ifndef PARACONTENT_H
-#define PARACONTENT_H
+#ifndef STD_PARA_H
+#define STD_PARA_H
 #include "Constant.h"
 #include "BasePara.h"
 class StdPara:public BasePara
@@ -12,7 +12,7 @@ protected:
     virtual bool filter(ParaType);
 
 public:
-    StdPara(std::istream &, ParaType, BasePara *);
+    StdPara(ParaType, BasePara *);
     ~StdPara();
 };
 #endif

@@ -1,5 +1,5 @@
-#ifndef PARAGRAPH_H
-#define PARAGRAPH_H
+#ifndef BASE_PARA_H
+#define BASE_PARA_H
 #include "Constant.h"
    class BasePara
 {
@@ -8,7 +8,7 @@ protected:
     BasePara *pFather;
 public:
     BasePara();
-    BasePara(std::istream &, ParaType, BasePara *);
+    BasePara(ParaType, BasePara *);
     ~BasePara();
 };
 
