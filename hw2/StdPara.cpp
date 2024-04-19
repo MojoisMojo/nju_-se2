@@ -1,6 +1,6 @@
 #include "StdPara.h"
 #include "Utils.h"
-StdPara::StdPara(ParaType pType, BasePara * pFather = nullptr)
+StdPara::StdPara(std::istream& fin, ParaType pType, BasePara * pFather = nullptr)
 :BasePara(pType,pFather)
 {
 }

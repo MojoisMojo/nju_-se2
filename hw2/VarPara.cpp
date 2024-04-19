@@ -1,11 +1,11 @@
 #include "VarPara.h"
 #include "Utils.h"
 #include "Constant.h"
-VarPara::VarPara(ParaType pType, BasePara * pFather = nullptr)
-    : StdPara(pType,pFather) // do nothing
+VarPara::VarPara(std::istream& fin, ParaType pType, BasePara * pFather = nullptr)
+    : StdPara(fin, pType,pFather) // do nothing
 {
     std::string line;
-    while (getline(std::cin,line))
+    while (getline(fin,line))
     {
         // 删去头尾空格
         myTrim(line);

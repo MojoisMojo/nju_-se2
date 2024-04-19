@@ -12,7 +12,7 @@ protected:
     virtual bool filter(ParaType);
 
 public:
-    StdPara(ParaType, BasePara *);
+    StdPara(std::istream&, ParaType, BasePara *);
     ~StdPara();
 };
 #endif
