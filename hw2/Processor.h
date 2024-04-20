@@ -1,7 +1,7 @@
 #ifndef PROCESSOR_H
 #define PROCESSOR_H
 #include "Constant.h"
-class BasePara;
+#include "BasePara.h"
 class Processor
 {
 protected:

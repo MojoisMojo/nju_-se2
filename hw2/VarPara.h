@@ -6,15 +6,24 @@
 class VarPara : public StdPara
 {
 protected:
-    std::string varName;
-    std::string varIdentifier;
+    std::string mVarName;
+    std::string mVarIdentifier;
+    std::string mVarType;
 
 protected:
-    ProcessCode processLine(const std::string &) override;
-    bool filter(ParaType) override;
+    static bool isVarName(const std::string &);
+    static bool isVarIdentfier(const std::string &);
+    static bool isVarType(const std::string &);
+
+    // ProcessCode processLine(const std::string &) override; 不需要重写
+    virtual bool filter(ParaType) override;
+    // virtual std::ostream&print(std::ostream&)override; 不需要重写
 
 public:
-    VarPara(std::istream&, ParaType, BasePara *);
+    VarPara(std::istream &, ParaType, BasePara *);
+    std::string getVarType() const;
+    std::string getVarName() const;
+    std::string getVarIdentifier() const;
     ~VarPara();
 };
 #endif

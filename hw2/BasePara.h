@@ -1,14 +1,22 @@
 #ifndef BASE_PARA_H
 #define BASE_PARA_H
 #include "Constant.h"
-   class BasePara
+class BasePara
 {
 protected:
-    ParaType pType;
-    BasePara *pFather;
+    ParaType mParaType;
+    BasePara *mParaFather;
+protected:
+    static ParaType string2ParaType(const std::string &);
+    virtual std::ostream&print(std::ostream&);
 public:
     BasePara();
     BasePara(ParaType, BasePara *);
+    
+    ParaType getParaType()const;
+    BasePara *getParaFather()const;
+    
+    friend std::ostream&operator<<(std::ostream&,BasePara &);
     ~BasePara();
 };
 

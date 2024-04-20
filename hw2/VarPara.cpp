@@ -1,64 +1,45 @@
 #include "VarPara.h"
 #include "Utils.h"
 #include "Constant.h"
-VarPara::VarPara(std::istream& fin, ParaType pType, BasePara * pFather = nullptr)
-    : StdPara(fin, pType,pFather) // do nothing
+VarPara::VarPara(std::istream &fin, ParaType pType, BasePara *pFather = nullptr)
+    : StdPara(fin, pType, pFather) // do nothing
 {
-    std::string line;
-    while (getline(fin,line))
+    // get Name / Type / Indertifier
+    for (auto &[key, value] : mParaProporties)
     {
-        // 删去头尾空格
-        myTrim(line);
-        if (line.size() == 0)
+        if (isVarName(key))
         {
-            continue;
+            mVarName = value;
         }
-        if (processLine(line) != ProcessCode::PROCESS_CONTINUE)
+        else if (isVarIdentfier(key))
         {
-            return;
+            mVarIdentifier = value;
+        }
+        else if (isVarType(key))
+        {
+            mVarType = value;
         }
     }
 }
-ProcessCode VarPara::processLine(const std::string &line)
-{
-    if (line.substr(1, 5) == "begin") // begin
-    {
-        std::string paraType = line.substr(6);
-        // paraSonParas.push_back();
-    }
-    else if (line.substr(1, 3) == "end") // end
-    {
-        return ProcessCode::PROCESS_END;
-    }
-    else
-    {
 
-        auto p = formatToKeyValue(line);
-        if (p.first.empty())
-        {
-            paraContents.push_back(p.second);
-        }
-        else
-        {
-            paraProporties[p.first] = p.second;
-            if (isName(p.first))
-            {
-                varName = p.second;
-            }
-            else if (isIdentfier(p.first))
-            {
-                varIdentifier = p.second;
-            }
-        }
-    }
-    return ProcessCode::PROCESS_CONTINUE;
-}
-bool VarPara::filter(ParaType paraType)
-{
-    return true;
-}
+/// @brief 筛选子段落
+/// @param paraType 子段落类型
+/// @return 如果通过筛选返回true，否则返回false
+bool VarPara::filter(ParaType paraType) { return true; }
+
+std::string VarPara::getVarType() const { return mVarType; }
+std::string VarPara::getVarName() const { return mVarName; }
+std::string VarPara::getVarIdentifier() const { return mVarIdentifier; }
+
+/// @brief 判断token是否包含Name字段
+bool VarPara::isVarName(const std::string &token) { return isMatch(token, {"Name", "name"}); }
+
+/// @brief 判断token是否包含Identifier字段
+bool VarPara::isVarIdentfier(const std::string &token) { return isMatch(token, {"Identifier", "identidier"}); }
+
+/// @brief 判断token是否包含type字段
+bool VarPara::isVarType(const std::string &token) { return isMatch(token, {"Type", "type"}); }
 
 VarPara::~VarPara()
-{
-    // do nothing
+{ /* do nothing */
 }
