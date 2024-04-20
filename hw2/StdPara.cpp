@@ -1,8 +1,8 @@
 #include "StdPara.h"
-#include "Utils.h"
-#include "Constant.h"
-StdPara::StdPara(std::istream &fin, ParaType pType, BasePara *pFather = nullptr)
-    : BasePara(pType, pFather)
+StdPara::StdPara(ParaType pType, BasePara *pFather = nullptr)
+    : BasePara(pType, pFather) {}
+
+void StdPara::read(std::istream &fin)
 {
     std::string line;
     while (getline(fin, line))
@@ -13,29 +13,52 @@ StdPara::StdPara(std::istream &fin, ParaType pType, BasePara *pFather = nullptr)
         {
             continue;
         }
-        if (processLine(fin, line) != ProcessCode::PROCESS_CONTINUE)
+        ProcessCode result = processLine(fin, line);
+        if (result == ProcessCode::PROCESS_SKIP)
+        {
+            std::cerr << "Skip!\n";
+            Skip(fin);
+        }
+        else if (result != ProcessCode::PROCESS_CONTINUE)
         {
             return;
         }
     }
 }
 
+void StdPara::Skip(std::istream &fin)
+{
+    int begin = 1;
+    std::string line;
+    while (begin && getline(fin, line))
+    {
+        myTrim(line);
+        if (isBegin(line))
+        {
+            ++begin;
+        }
+        else if (isEnd(line))
+        {
+            --begin;
+        }
+    }
+}
 ProcessCode StdPara::processLine(std::istream &fin, const std::string &line)
 {
-    if (line.substr(1, 5) == "begin") // begin
+    if (isBegin(line)) // begin
     {
         std::stringstream sline(line.substr(6));
         std::string stype;
         sline >> stype;
         ParaType sonType = string2ParaType(stype);
-        if (filter(sonType))
+        if (filter(sonType)) // need to read
         {
-            BasePara * sonPara = new StdPara(fin,sonType,this);
-            mSonParas.push_back(sonPara);
+            processSubPara(fin, sonType);
+            return ProcessCode::PROCESS_CONTINUE;
         }
-        throw("变量 格式错误");
+        return ProcessCode::PROCESS_SKIP;
     }
-    else if (line.substr(1, 3) == "end") // end
+    else if (isEnd(line)) // end
     {
         return ProcessCode::PROCESS_END;
     }
@@ -48,20 +71,41 @@ ProcessCode StdPara::processLine(std::istream &fin, const std::string &line)
         }
         else
         {
-            mParaProporties[p.first] = p.second;
+            mParaProperties[p.first] = p.second;
         }
     }
     return ProcessCode::PROCESS_CONTINUE;
 }
 
-bool StdPara::filter(ParaType)
+void StdPara::processSubPara(std::istream &fin, ParaType subPType)
+{
+    StdPara *sonPara = new StdPara(subPType, this);
+    sonPara->read(fin);  // read
+    if (filter(sonPara)) // check
+    {
+        std::cerr << "Add!\n";
+        mSonParas.push_back(sonPara);
+    }
+    else
+    {
+        std::cerr << "Delete!\n";
+        delete sonPara;
+    }
+}
+
+bool StdPara::filter(ParaType pType)
 {
     return true;
 }
+bool StdPara::filter(BasePara *para)
+{
+    return true;
+}
+
 std::ostream &StdPara::print(std::ostream &os)
 {
     os << "ParaType: " << PARA_TYPE_STRINGS[(int)mParaType] << "\n";
-    for (auto &[key, value] : mParaProporties)
+    for (auto &[key, value] : mParaProperties)
     {
         os << key << ": " << value << "\n";
     }
@@ -73,12 +117,54 @@ std::ostream &StdPara::print(std::ostream &os)
     {
         os << "\t" << (*sonPara) << "\n";
     }
+    return os;
 }
 // 将 形如"/* xxx xxxx        */ xxxxxx" \
 格式化为 pair{xxx xxxx, xxxxxx} \
-如果没有 注释 first = NULL
-Proporty StdPara::formatToKeyValue(const std::string &text)
+如果没有 /**/ 则将first=""
+Property StdPara::formatToKeyValue(const std::string &text)
 {
+    Property result;
+    // 查找注释的起始位置
+    size_t beginPos = text.find("/*");
+    if (beginPos != std::string::npos)
+    {
+        size_t endPos = text.find("*/", beginPos + 2);
+        if (endPos != std::string::npos)
+        {
+            std::string comment = text.substr(beginPos + 2, endPos - beginPos - 2);
+            std::string content = text.substr(endPos + 2);
+            myTrim(comment);
+            myTrim(content);
+            result = {comment, content};
+        }
+        else
+        {
+            result = std::make_pair("", "");
+        }
+    }
+    else
+    {
+        std::string value = text;
+        myTrim(value);
+        int i = 0, length = value.size();
+        while (length > i && value[i] == '\"')
+        {
+            ++i;
+        }
+        value.erase(0, i);
+        i = value.size() - 1;
+        length = value.size();
+        while (0 <= i && value[i] == '\"')
+        {
+            --i;
+        }
+        value.erase(i + 1, length - i - 1);
+
+        result = std::make_pair("", value);
+    }
+
+    return result;
 }
 
 StdPara::~StdPara()
@@ -88,4 +174,9 @@ StdPara::~StdPara()
         delete para;
         para = nullptr;
     }
+}
+
+std::ostream &operator<<(std::ostream &os, StdPara &par)
+{
+    return par.print(os);
 }

@@ -1,63 +1,75 @@
 #include "Processor.h"
-#include "VarPara.h"
 Processor::Processor()
+    : mMainPara(nullptr)
 {
 }
 
-void Processor::processParagraph()
-{
-}
-
-void Processor::read()
+void Processor::processFile()
 {
     // try to read the file
+    std::cout << "请输入文件相对路径:";
     std::string filePath;
     while (std::cin >> filePath)
     {
+        std::fstream fin("./" + filePath);
+        if (fin)
+        {
+            read(fin);
+            fin.close();
+            break;
+        }
+        std::cout << "请输入文件相对路径:";
     }
     std::cin.clear();
 }
 
+void Processor::read(std::istream &fin)
+{
+    std::string line;
+    while (getline(fin, line))
+    {
+        myTrim(line);
+        std::stringstream sline(line);
+        std::string token1, token2;
+        if (sline >> token1 >> token2)
+            if (token1 == "/begin" && token2 == "MODULE")
+            {
+                break;
+            }
+    }
+    mMainPara = new MainPara();
+    mMainPara->read(fin);
+}
+
 void Processor::processInstructions()
 {
+    std::cin.clear();
     std::string ins;
     std::cout << "请输入需要查找的变量名,输入quit()或Ctrl+Z结束查询:\n";
     while (getline(std::cin, ins))
     {
-        if(ins == "quit()"){break;}
-        if(mVariblesMap.count(ins)){
-            std::cout << "你查询的变量为:\n";
+        if (ins == "quit()")
+        {
+            break;
         }
-    }
-}
-/// @brief 筛选子段落 
-/// @param pType 子段落类型
-/// @return 如果通过筛选返回true，否则返回false
-bool Processor::filter(ParaType pType)
-{
-    return pType == ParaType::PARA_CHARACTERISTIC || pType == ParaType::PARA_MEASUREMENT;
-}
-/// @brief 筛选子段落
-/// @param para 子段落
-/// @return 如果通过筛选返回true，否则返回false
-bool Processor::filter(BasePara * para)
-{
-    
-    switch (para->getParaType())
-    {
-    case ParaType::PARA_CHARACTERISTIC:
-        VarPara * var = (VarPara *)para;
-        if(var->getVarType() == "VALUE"){
-            return true;
+        VarPara *v = mMainPara->search(ins);
+        if (v)
+        {
+            std::cout << "您查询的变量为:\n"
+                      << (*v);
         }
-        return false;
-    case ParaType::PARA_MEASUREMENT:
-        return true;
-    default:
-        return false;
+        else
+        {
+            std::cout << "未知变量\n";
+        }
     }
 }
 
 Processor::~Processor()
 {
+    if (mMainPara)
+    {
+        delete mMainPara;
+        mMainPara = nullptr;
+    }
 }

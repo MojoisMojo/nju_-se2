@@ -51,10 +51,18 @@ graph TB
     par-->lId
 ```
 
+### d.主段落
 
-## 2. 全局量
-
+继承 
 ```mermaid
 graph TB
-    Global-->mVariblesMap
+    par[变量段落]
+    parType[段落类型]
+    parFather[父段落]
+    ch[属性]
+    son[子段落]
+    par-->parType
+    par-->parFather
+    par-->ch
+    par-->son
 ```

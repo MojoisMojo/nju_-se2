@@ -6,14 +6,16 @@
 #include <string>
 #include <unordered_map>
 #include <vector>
-typedef std::unordered_map<std::string, std::string> Proporties;
-typedef std::pair<std::string, std::string> Proporty;
+#include <functional>
+typedef std::unordered_map<std::string, std::string> Properties;
+typedef std::pair<std::string, std::string> Property;
 typedef std::string Content;
 typedef enum struct ProcessCode
 {
     PROCESS_FAIL,
     PROCESS_END,
     PROCESS_CONTINUE,
+    PROCESS_SKIP,
 } ProcessCode;
 
 #define PARA_TYPE_NUMBER 2

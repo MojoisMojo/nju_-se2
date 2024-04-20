@@ -1,10 +1,9 @@
-#include "Constant.h"
-#include "BasePara.h"
-#include "StdPara.h"
-#include "VarPara.h"
 #include "Processor.h"
-int main(int arg, char *argv[])
+int main()
 {
-    Processor manager;
+    freopen("../debug.txt","w+",stderr);
+    Processor processor;
+    processor.processFile();
+    processor.processInstructions();
     return 0;
 }

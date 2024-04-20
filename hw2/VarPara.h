@@ -1,8 +1,6 @@
 #ifndef VAR_PARA_H
 #define VAR_PARA_H
-#include "Constant.h"
 #include "StdPara.h"
-
 class VarPara : public StdPara
 {
 protected:
@@ -16,11 +14,14 @@ protected:
     static bool isVarType(const std::string &);
 
     // ProcessCode processLine(const std::string &) override; 不需要重写
-    virtual bool filter(ParaType) override;
+    // virtual bool filter(ParaType) override;
+    // virtual bool filter(BasePara *) override;
+    friend std::ostream&operator<<(std::ostream&,VarPara&);
     // virtual std::ostream&print(std::ostream&)override; 不需要重写
 
 public:
-    VarPara(std::istream &, ParaType, BasePara *);
+    virtual void read(std::istream &) override;
+    VarPara(ParaType, BasePara *);
     std::string getVarType() const;
     std::string getVarName() const;
     std::string getVarIdentifier() const;

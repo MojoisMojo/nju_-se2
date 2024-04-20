@@ -1,11 +1,20 @@
-#include "Constant.h"
 #include "BasePara.h"
-BasePara::BasePara()
+BasePara::BasePara(ParaType pType = ParaType::PARA_UNDEFINED, BasePara *pFather = nullptr)
+    : mParaType(pType), mParaFather(pFather)
 {
 }
-BasePara::BasePara(ParaType pType, BasePara *pFather = nullptr)
-    : mParaType(pType), mParaFather(pFather)
-{}
+void BasePara::read(std::istream &fin)
+{
+}
+
+bool BasePara::isBegin(const std::string &str)
+{
+    return str.substr(1, 5) == "begin";
+}
+bool BasePara::isEnd(const std::string &str)
+{
+    return str.substr(1, 3) == "end";
+}
 ParaType BasePara::string2ParaType(const std::string &paraTypeString)
 {
     for (int i = 0; i < PARA_TYPE_NUMBER; ++i)
@@ -25,13 +34,16 @@ BasePara *BasePara::getParaFather() const
 {
     return mParaFather;
 }
-std::ostream& BasePara::print(std::ostream& os){
+std::ostream &BasePara::print(std::ostream &os)
+{
     return os << "ParaType: " << PARA_TYPE_STRINGS[(int)mParaType];
 }
 
-std::ostream&operator<<(std::ostream& os,BasePara & para){
+std::ostream &operator<<(std::ostream &os, BasePara &para)
+{
     return para.print(os);
 }
 
 BasePara::~BasePara()
-{}
+{
+}

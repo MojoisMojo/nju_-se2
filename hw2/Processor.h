@@ -1,18 +1,15 @@
 #ifndef PROCESSOR_H
 #define PROCESSOR_H
-#include "Constant.h"
-#include "BasePara.h"
+#include "MainPara.h"
 class Processor
 {
 protected:
-    std::unordered_map<std::string, BasePara *> mVariblesMap;
-    bool filter(ParaType);
-    bool filter(BasePara *);
-    void processParagraph();
+    MainPara * mMainPara;
+    void read(std::istream &);
 
 public:
     Processor();
-    void read();
+    void processFile();
     void processInstructions();
     ~Processor();
 };
