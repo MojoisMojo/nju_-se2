@@ -7,6 +7,7 @@
 #include <unordered_map>
 #include <vector>
 #include <functional>
+#include <stdio.h>
 typedef std::unordered_map<std::string, std::string> Properties;
 typedef std::pair<std::string, std::string> Property;
 typedef std::string Content;
