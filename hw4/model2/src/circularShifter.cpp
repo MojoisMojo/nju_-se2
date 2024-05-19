@@ -3,7 +3,7 @@
 #include <string>
 void CircularShifter::setup(const LineStorage &lines)
 {
-    shifts_ = lines;
+    shifts_ = LineStorage();
     for (int i = 0; i < lines.getLineCount(); ++i)
     {
         Line line = lines.getLine(i);
@@ -16,4 +16,8 @@ void CircularShifter::setup(const LineStorage &lines)
             }
         }
     }
+}
+const LineStorage & CircularShifter::getShiftsLine()
+{
+    return shifts_;
 }

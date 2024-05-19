@@ -10,5 +10,6 @@ public:
     void doAlph();
     Line & getIthLine(int);
     Line getIthLine(int)const;
+    const LineStorage & getLineStorage();
 };
 #endif

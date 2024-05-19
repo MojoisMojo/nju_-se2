@@ -8,5 +8,6 @@ private:
 
 public:
     void setup(const LineStorage &lines);
+    const LineStorage & getShiftsLine();
 };
 #endif

@@ -57,16 +57,17 @@ int LineStorage::getWordCount(int lineIdx)
     }
 }
 
-void LineStorage::sortedBy(std::function<bool(const Line&, const Line&)> cmpFunc)
+void LineStorage::sortedBy(std::function<bool(const Line &, const Line &)> cmpFunc)
 {
-    std::sort(lines.begin(),lines.end(),cmpFunc);
+    std::sort(lines.begin(), lines.end(), cmpFunc);
 }
 
 Line LineStorage::getLine(int lineIdx) const
 {
     return lines[lineIdx];
 }
-Line& LineStorage::getLine(int lineIdx)
+
+Line &LineStorage::getLine(int lineIdx)
 {
     return lines[lineIdx];
 }
@@ -85,7 +86,25 @@ void LineStorage::addEmptyLine()
     lines.push_back(Line());
 }
 
+void LineStorage::addLine(const Line &line)
+{
+    lines.push_back(line);
+}
+
 void LineStorage::addWord(std::string word, int idx)
 {
     lines[idx].push_back(word);
+}
+
+std::ostream &operator<<(std::ostream &outs, const LineStorage &lineStorage)
+{
+    for (auto &line : lineStorage.getLines())
+    {
+        for (auto &word : line)
+        {
+            outs << word << " ";
+        }
+        outs << "\n";
+    }
+    return outs;
 }

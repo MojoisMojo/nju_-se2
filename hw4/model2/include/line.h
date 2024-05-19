@@ -17,5 +17,4 @@
 // };
 
 typedef std::vector<std::string> Line;
-
 #endif
