@@ -1,3 +1,0 @@
-/mnt/d/Documents/tmp/se/hw2/build/CMakeFiles/myprogram.dir
-/mnt/d/Documents/tmp/se/hw2/build/CMakeFiles/edit_cache.dir
-/mnt/d/Documents/tmp/se/hw2/build/CMakeFiles/rebuild_cache.dir
