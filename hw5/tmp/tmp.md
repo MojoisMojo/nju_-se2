@@ -29,7 +29,7 @@
 
 ### A 用例图
 
-
+![alt text](image.png)
 
 ### B 概念图
 
@@ -76,6 +76,30 @@ ATM机（现金储备）\
 ![alt text](image-1.png)
 
 ### C 顺序图
+
+#### 1. 安全验证
+
+![alt text](image-2.png)
+
+#### 2. 取款
+
+![alt text](image-3.png)
+
+#### 3. 存款
+
+![alt text](image-4.png)
+
+#### 4. 转账
+
+![alt text](image-5.png)
+
+#### 5. 查询
+
+![alt text](image-6.png)
+
+#### 6. 设置
+
+![alt text](image-7.png)
 
 ### D 状态机图
 
