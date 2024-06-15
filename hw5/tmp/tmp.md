@@ -29,7 +29,7 @@
 
 ### A 用例图
 
-![alt text](image.png)
+
 
 ### B 概念图
 
