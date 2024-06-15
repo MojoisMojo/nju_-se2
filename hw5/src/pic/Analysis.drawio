@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-15T10:26:59.077Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="syA3azWvCiD-axROtYXb" version="24.5.3" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2024-06-15T10:42:51.990Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="EnVnRJCwxZ1WtssE_K-F" version="24.5.3" type="github" pages="3">
   <diagram id="_tscBDmkcDxSYHEMuUUn" name="用例图">
     <mxGraphModel dx="683" dy="405" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -333,10 +333,22 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Ex-Fzky9mS68iHsWrYUo" name="顺序图">
-    <mxGraphModel dx="683" dy="405" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="190" dy="113" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="WeCcNYqvjaYBWZyZDHtB-1" value="sd safety" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="370" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="WeCcNYqvjaYBWZyZDHtB-2" value="&lt;u&gt;持卡人&lt;/u&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="70" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WeCcNYqvjaYBWZyZDHtB-3" value="系统" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="280" y="70" width="88" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WeCcNYqvjaYBWZyZDHtB-4" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;u style=&quot;background-color: initial; font-size: 6px;&quot;&gt;&lt;font color=&quot;#ff0f0f&quot;&gt;&lt;b&gt;持卡人&lt;/b&gt;&lt;/font&gt;&lt;/u&gt;&lt;br&gt;&lt;/div&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;size=40;" vertex="1" parent="1">
+          <mxGeometry x="230" y="160" width="20" height="270" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
