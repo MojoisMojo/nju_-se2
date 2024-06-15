@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-15T11:54:52.916Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="cvN3qQc4NpU1JRyBdCIo" version="24.5.4" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2024-06-15T12:33:41.254Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="lFXlV-NxAHO3r3kg5oAK" version="24.5.4" type="github" pages="4">
   <diagram id="_tscBDmkcDxSYHEMuUUn" name="用例图">
     <mxGraphModel dx="683" dy="405" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -702,10 +702,43 @@
     </mxGraphModel>
   </diagram>
   <diagram id="zaXaOZwF2xclXfJ--dgt" name="状态图">
-    <mxGraphModel dx="617" dy="405" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="292" dy="343" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="-ZG172kemyhVVWbfoDFO-1" value="待机" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="130" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-ZG172kemyhVVWbfoDFO-2" value="安全验证" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="190" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-ZG172kemyhVVWbfoDFO-4" value="首页" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="280" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-ZG172kemyhVVWbfoDFO-5" value="安全验证&lt;div&gt;错误提示&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="270" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-ZG172kemyhVVWbfoDFO-6" value="余额显示" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="360" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-ZG172kemyhVVWbfoDFO-7" value="存入现金显示" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="340" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-ZG172kemyhVVWbfoDFO-8" value="服务非法提示" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="420" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-ZG172kemyhVVWbfoDFO-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1" source="-ZG172kemyhVVWbfoDFO-9" target="-ZG172kemyhVVWbfoDFO-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-ZG172kemyhVVWbfoDFO-9" value="服务结束" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="210" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-ZG172kemyhVVWbfoDFO-10" value="" style="html=1;verticalAlign=bottom;startArrow=circle;startFill=1;endArrow=open;startSize=6;endSize=8;curved=0;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="-ZG172kemyhVVWbfoDFO-1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="70" y="150" as="sourcePoint" />
+            <mxPoint x="120" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
