@@ -1,14 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2024-06-15T13:18:26.740Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="6-FIEb1dZT8bt-pMDTBR" version="24.5.4" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2024-06-15T14:31:37.466Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="F0MLnnt8pkkHjNISZ9se" version="24.5.4" type="github" pages="4">
   <diagram id="_tscBDmkcDxSYHEMuUUn" name="用例图">
-    <mxGraphModel dx="683" dy="405" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="911" dy="405" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="_fDkVU81IbNHXYLJN514-9" value="ATM 软件系统" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="160" y="50" width="380" height="350" as="geometry" />
-        </mxCell>
-        <mxCell id="_fDkVU81IbNHXYLJN514-17" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="_fDkVU81IbNHXYLJN514-2" target="_fDkVU81IbNHXYLJN514-12" edge="1">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="_fDkVU81IbNHXYLJN514-18" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" parent="1" source="_fDkVU81IbNHXYLJN514-2" target="_fDkVU81IbNHXYLJN514-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -33,9 +30,6 @@
         </mxCell>
         <mxCell id="_fDkVU81IbNHXYLJN514-11" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;取款&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E3E3E3;" parent="1" vertex="1">
           <mxGeometry x="390" y="150" width="110" height="55" as="geometry" />
-        </mxCell>
-        <mxCell id="_fDkVU81IbNHXYLJN514-12" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;安全验证&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E3E3E3;" parent="1" vertex="1">
-          <mxGeometry x="180" y="70" width="110" height="55" as="geometry" />
         </mxCell>
         <mxCell id="_fDkVU81IbNHXYLJN514-13" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;查询&lt;/font&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2015px%3B%26quot%3B%26gt%3B%E5%AE%89%E5%85%A8%E9%AA%8C%E8%AF%81%26lt%3B%2Ffont%26gt%3B%22%20style%3D%22ellipse%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22210%22%20y%3D%22165%22%20width%3D%22110%22%20height%3D%2255%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E3E3E3;" parent="1" vertex="1">
           <mxGeometry x="200" y="310" width="110" height="55" as="geometry" />
@@ -683,7 +677,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="zaXaOZwF2xclXfJ--dgt" name="状态图">
-    <mxGraphModel dx="2278" dy="1013" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="521" dy="231" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
