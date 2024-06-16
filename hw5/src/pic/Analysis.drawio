@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-16T05:17:28.982Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="faGw0R9ki-aZwaDxom7q" version="24.5.4" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2024-06-16T06:04:15.976Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="5bXwlx3ze7iZVSL5giOP" version="24.5.4" type="github" pages="5">
   <diagram id="_tscBDmkcDxSYHEMuUUn" name="用例图">
     <mxGraphModel dx="1538" dy="675" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -886,7 +886,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="cOMb2aBossjoLvDRFeZz" name="分层包图">
-    <mxGraphModel dx="943" dy="1953" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2626" dy="1984" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
