@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-16T06:29:15.037Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="gPBeUFcHP9ZE7X6aJ-HC" version="24.5.4" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2024-06-16T07:11:52.235Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="6u1McShCjXf1GbFKt0MH" version="24.5.4" type="github" pages="5">
   <diagram id="_tscBDmkcDxSYHEMuUUn" name="用例图">
     <mxGraphModel dx="1538" dy="675" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -331,7 +331,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Ex-Fzky9mS68iHsWrYUo" name="顺序图">
-    <mxGraphModel dx="395" dy="464" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="919" dy="405" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -623,7 +623,7 @@
             <mxPoint x="207" y="170" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CvCF6lGR_icU3ZQeEqsx-1" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="CvCF6lGR_icU3ZQeEqsx-1" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="10" y="10" width="320" height="270" as="geometry" />
         </mxCell>
         <mxCell id="WeCcNYqvjaYBWZyZDHtB-1" value="sd safety" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=50;height=30;" parent="CvCF6lGR_icU3ZQeEqsx-1" vertex="1">
@@ -645,7 +645,7 @@
           <mxGeometry x="250" y="10" width="30" height="240" as="geometry" />
         </mxCell>
         <mxCell id="l38yvEcNUK8rP8y_qCf2-2" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="l38yvEcNUK8rP8y_qCf2-1" vertex="1">
-          <mxGeometry x="10" y="55" width="10" height="155" as="geometry" />
+          <mxGeometry x="10" y="90" width="10" height="40" as="geometry" />
         </mxCell>
         <mxCell id="WeCcNYqvjaYBWZyZDHtB-19" value="密码" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="CvCF6lGR_icU3ZQeEqsx-1" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
