@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-16T07:14:12.052Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="vX4gRrtgLf1ig2GgUOuV" version="24.5.4" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2024-06-16T07:27:54.347Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="Kx2NI4wpeLyZcqGiaynQ" version="24.5.4" type="github" pages="4">
   <diagram name="Safety" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
     <mxGraphModel dx="1045" dy="985" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
@@ -251,6 +251,91 @@
             <mxPoint x="280" y="350" as="sourcePoint" />
             <mxPoint x="845" y="350" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="mo1i4k56CSie7Ws4eWxQ" name="WithDrawState">
+    <mxGraphModel dx="731" dy="386" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LI961CZ02Yag1nSr1a8--3" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" vertex="1" parent="1">
+          <mxGeometry x="220" y="219" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LI961CZ02Yag1nSr1a8--13" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="235" y="140" width="665" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="x-IqcWA_FzjQ0TPMWxgy-4" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="LI961CZ02Yag1nSr1a8--13" source="x-IqcWA_FzjQ0TPMWxgy-2" target="x-IqcWA_FzjQ0TPMWxgy-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LI961CZ02Yag1nSr1a8--1" value="checkValid&lt;div&gt;[True]&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" vertex="1" connectable="0" parent="x-IqcWA_FzjQ0TPMWxgy-4">
+          <mxGeometry x="-0.1277" y="1" relative="1" as="geometry">
+            <mxPoint y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x-IqcWA_FzjQ0TPMWxgy-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=open;endFill=0;" edge="1" parent="LI961CZ02Yag1nSr1a8--13" source="x-IqcWA_FzjQ0TPMWxgy-2" target="LI961CZ02Yag1nSr1a8--8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="5" y="90" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="130" />
+              <mxPoint x="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x-IqcWA_FzjQ0TPMWxgy-7" value="checkValid&lt;div&gt;[False]&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" vertex="1" connectable="0" parent="x-IqcWA_FzjQ0TPMWxgy-5">
+          <mxGeometry x="0.0347" y="-1" relative="1" as="geometry">
+            <mxPoint x="2" y="16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x-IqcWA_FzjQ0TPMWxgy-2" value="WithdrawChecker" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="LI961CZ02Yag1nSr1a8--13">
+          <mxGeometry x="75" y="74" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LI961CZ02Yag1nSr1a8--6" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=open;endFill=0;" edge="1" parent="LI961CZ02Yag1nSr1a8--13" source="x-IqcWA_FzjQ0TPMWxgy-3" target="LI961CZ02Yag1nSr1a8--9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="475" y="93.99999999999994" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LI961CZ02Yag1nSr1a8--7" value="tryWithdraw" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" vertex="1" connectable="0" parent="LI961CZ02Yag1nSr1a8--6">
+          <mxGeometry x="-0.1575" y="3" relative="1" as="geometry">
+            <mxPoint x="4" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x-IqcWA_FzjQ0TPMWxgy-3" value="TryWithdraw" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="LI961CZ02Yag1nSr1a8--13">
+          <mxGeometry x="255" y="74" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LI961CZ02Yag1nSr1a8--11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=open;endFill=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="LI961CZ02Yag1nSr1a8--13" source="LI961CZ02Yag1nSr1a8--3" target="LI961CZ02Yag1nSr1a8--8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="35" y="200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint y="160" />
+              <mxPoint x="650" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LI961CZ02Yag1nSr1a8--12" value="EndWithdraw" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" vertex="1" connectable="0" parent="LI961CZ02Yag1nSr1a8--11">
+          <mxGeometry x="-0.2234" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LI961CZ02Yag1nSr1a8--4" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;align=center;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" edge="1" source="LI961CZ02Yag1nSr1a8--3" parent="LI961CZ02Yag1nSr1a8--13" target="x-IqcWA_FzjQ0TPMWxgy-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-50" y="169" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LI961CZ02Yag1nSr1a8--5" value="InputNum" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" vertex="1" connectable="0" parent="LI961CZ02Yag1nSr1a8--4">
+          <mxGeometry x="-0.0876" y="-1" relative="1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LI961CZ02Yag1nSr1a8--8" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" vertex="1" parent="LI961CZ02Yag1nSr1a8--13">
+          <mxGeometry x="635" y="79" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LI961CZ02Yag1nSr1a8--10" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=open;endFill=0;" edge="1" parent="LI961CZ02Yag1nSr1a8--13" source="LI961CZ02Yag1nSr1a8--9" target="LI961CZ02Yag1nSr1a8--8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LI961CZ02Yag1nSr1a8--9" value="RecordWithdraw" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="LI961CZ02Yag1nSr1a8--13">
+          <mxGeometry x="445" y="74" width="110" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
