@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-16T04:25:47.584Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="f45zzmZ3KMb5VS4Di0Wm" version="24.5.4" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2024-06-16T04:41:23.564Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="Ys9D4SYGSompF56p0Xtg" version="24.5.4" type="github" pages="5">
   <diagram id="_tscBDmkcDxSYHEMuUUn" name="用例图">
     <mxGraphModel dx="1538" dy="675" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -50,7 +50,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="cdfrZwTHyTWOTEycZxcs" name="概念类图">
-    <mxGraphModel dx="569" dy="338" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="804" dy="476" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -91,7 +91,7 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="864" y="355" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="840" y="160" />
+              <mxPoint x="845" y="160" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -114,23 +114,23 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="606" y="370" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="840" y="530" />
+              <mxPoint x="845" y="530" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="iE-vTMNz11IkSs5qEqaC-14" value="被...发起、参与，更新" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" parent="iE-vTMNz11IkSs5qEqaC-13" vertex="1" connectable="0">
+        <mxCell id="iE-vTMNz11IkSs5qEqaC-14" value="发起，参与，被...更新" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" parent="iE-vTMNz11IkSs5qEqaC-13" vertex="1" connectable="0">
           <mxGeometry x="-0.1658" relative="1" as="geometry">
-            <mxPoint x="56" y="-40" as="offset" />
+            <mxPoint x="-83" y="-10" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="iE-vTMNz11IkSs5qEqaC-15" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" parent="iE-vTMNz11IkSs5qEqaC-13" vertex="1" connectable="0">
           <mxGeometry x="-0.8142" y="3" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="-30" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="iE-vTMNz11IkSs5qEqaC-16" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;*&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" parent="iE-vTMNz11IkSs5qEqaC-13" vertex="1" connectable="0">
           <mxGeometry x="0.7536" y="-2" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="2" y="-42" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="iE-vTMNz11IkSs5qEqaC-17" value="&lt;p style=&quot;text-decoration-line: underline; margin: 4px 0px 0px;&quot;&gt;&lt;b&gt;存款操作&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;text-align: left; border-style: solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px;&quot;&gt;金额&amp;nbsp;&amp;nbsp;&lt;/p&gt;" style="verticalAlign=top;align=center;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" parent="1" vertex="1">
@@ -163,18 +163,19 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="606" y="380" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="730" y="510" />
+              <mxPoint x="780" y="510" />
+              <mxPoint x="780" y="305" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="iE-vTMNz11IkSs5qEqaC-24" value="参与，更新" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" parent="iE-vTMNz11IkSs5qEqaC-23" vertex="1" connectable="0">
+        <mxCell id="iE-vTMNz11IkSs5qEqaC-24" value="发起，参与，被...更新" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" parent="iE-vTMNz11IkSs5qEqaC-23" vertex="1" connectable="0">
           <mxGeometry x="-0.1658" relative="1" as="geometry">
-            <mxPoint x="5" y="-30" as="offset" />
+            <mxPoint x="-60" y="-3" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="iE-vTMNz11IkSs5qEqaC-25" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" parent="iE-vTMNz11IkSs5qEqaC-23" vertex="1" connectable="0">
           <mxGeometry x="-0.8142" y="3" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="-16" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="iE-vTMNz11IkSs5qEqaC-26" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;*&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" parent="iE-vTMNz11IkSs5qEqaC-23" vertex="1" connectable="0">
@@ -257,9 +258,9 @@
         <mxCell id="iE-vTMNz11IkSs5qEqaC-85" value="&lt;p style=&quot;text-decoration-line: underline; margin: 4px 0px 0px;&quot;&gt;&lt;b&gt;查询操作&lt;/b&gt;&lt;/p&gt;&lt;hr style=&quot;text-align: left; border-style: solid;&quot; size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px;&quot;&gt;&amp;nbsp;&lt;/p&gt;" style="verticalAlign=top;align=center;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" parent="1" vertex="1">
           <mxGeometry x="540" y="290" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="iE-vTMNz11IkSs5qEqaC-91" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" parent="1" source="F0MOuGapmOp6-V8S1yOk-1" target="iE-vTMNz11IkSs5qEqaC-85" edge="1">
+        <mxCell id="iE-vTMNz11IkSs5qEqaC-91" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" parent="1" source="6HNrtZYS89bKuHcl_wtk-3" target="iE-vTMNz11IkSs5qEqaC-85" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="650" y="464" as="sourcePoint" />
+            <mxPoint x="585" y="414" as="sourcePoint" />
             <mxPoint x="940" y="326" as="targetPoint" />
           </mxGeometry>
         </mxCell>
@@ -278,12 +279,12 @@
             <mxPoint x="3" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="iE-vTMNz11IkSs5qEqaC-95" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" parent="1" target="iE-vTMNz11IkSs5qEqaC-64" edge="1">
+        <mxCell id="iE-vTMNz11IkSs5qEqaC-95" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" parent="1" source="6HNrtZYS89bKuHcl_wtk-3" target="iE-vTMNz11IkSs5qEqaC-64" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="540.0000000000001" y="437.0344827586207" as="sourcePoint" />
+            <mxPoint x="540" y="437" as="sourcePoint" />
             <mxPoint x="350.0344827586207" y="332" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="350" y="437" />
+              <mxPoint x="350" y="530" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -302,12 +303,12 @@
             <mxPoint x="2" y="-22" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="iE-vTMNz11IkSs5qEqaC-99" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" parent="1" target="iE-vTMNz11IkSs5qEqaC-38" edge="1">
+        <mxCell id="iE-vTMNz11IkSs5qEqaC-99" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" parent="1" source="6HNrtZYS89bKuHcl_wtk-3" target="iE-vTMNz11IkSs5qEqaC-38" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="540.0000000000001" y="425.0344827586207" as="sourcePoint" />
+            <mxPoint x="540" y="425" as="sourcePoint" />
             <mxPoint x="475.0000000000001" y="335" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="475" y="425" />
+              <mxPoint x="475" y="510" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -325,41 +326,6 @@
           <mxGeometry x="0.7536" y="-2" relative="1" as="geometry">
             <mxPoint x="3" y="-4" as="offset" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="F0MOuGapmOp6-V8S1yOk-6" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="F0MOuGapmOp6-V8S1yOk-1" target="6HNrtZYS89bKuHcl_wtk-3">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="F0MOuGapmOp6-V8S1yOk-9" value="操作" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" vertex="1" connectable="0" parent="F0MOuGapmOp6-V8S1yOk-6">
-          <mxGeometry x="0.0173" y="-1" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="F0MOuGapmOp6-V8S1yOk-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" edge="1" parent="1" target="iE-vTMNz11IkSs5qEqaC-27">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="630" y="425.02857142857135" as="sourcePoint" />
-            <mxPoint x="690" y="335" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="700" y="425" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="F0MOuGapmOp6-V8S1yOk-11" value="发起" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" vertex="1" connectable="0" parent="F0MOuGapmOp6-V8S1yOk-10">
-          <mxGeometry x="0.0174" y="4" relative="1" as="geometry">
-            <mxPoint x="-26" y="6" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="F0MOuGapmOp6-V8S1yOk-13" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" vertex="1" connectable="0" parent="F0MOuGapmOp6-V8S1yOk-10">
-          <mxGeometry x="-0.9266" y="1" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="F0MOuGapmOp6-V8S1yOk-15" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;*&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" vertex="1" connectable="0" parent="F0MOuGapmOp6-V8S1yOk-10">
-          <mxGeometry x="0.8944" y="1" relative="1" as="geometry">
-            <mxPoint x="-6" y="3" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="F0MOuGapmOp6-V8S1yOk-1" value="&lt;p style=&quot;margin: 4px 0px 0px; text-decoration: underline;&quot;&gt;&lt;b&gt;持卡人&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;text-align: left; border-style: solid;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=center;overflow=fill;html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" vertex="1" parent="1">
-          <mxGeometry x="540" y="414" width="90" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
