@@ -137,26 +137,33 @@ ATM 机（现金储备）\
 
 ### 初步设计表
 
-| 功能 | 逻辑包                             |
-| ---- | ---------------------------------- |
-| 取款 | withdrawui,withdrawbl,withdrawdata |
-| 存款 | depositui,depositbl,depositdata    |
-| 查询 | searchui,searchbl,searchdata       |
-| 转账 | transferui,transferbl,transferdata |
-| 设置 | settingsui,settingsbl,settingsdata |
+| 功能                     | 逻辑包                             |
+| ------------------------ | ---------------------------------- |
+| 取款                     | withdrawui,withdrawbl,withdrawdata |
+| 存款                     | depositui,depositbl,depositdata    |
+| 查询                     | searchui,searchbl,searchdata       |
+| 转账                     | transferui,transferbl,transferdata |
+| 设置                     | settingsui,settingsbl,settingsdata |
+| 银行卡账户信息查看或更新 | cardui,cardbl,carddata             |
+| ATM 机信息更新           | atmui,atmbl,atmdata                |
 
 ### 改进设计表
 
-取款需要，查询账号余额、取款额度
-转账需要，查询余额和额度
+存款需要，银行卡账户信息查看或更新、ATM 机信息更新
+取款需要，银行卡账户信息查看或更新、ATM 机信息更新
+转账需要，银行卡账户信息查看或更新
+设置需要，银行卡账户信息查看或更新
+查询需要，银行卡账户信息查看或更新
 
-| 功能 | 逻辑包                                                      |
-| ---- | ----------------------------------------------------------- |
-| 取款 | withdrawui,withdrawbl,withdrawdata <br> searchbl,searchdata <br>|
-| 存款 | depositui,depositbl,depositdata                             |
-| 查询 | searchui,searchbl,searchdata                                |
-| 转账 | transferui,transferbl,transferdata <br> searchbl,searchdata <br> |
-| 设置 | settingsui,settingsbl,settingsdata                          |
+| 功能               | 逻辑包                                                                                                                |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------- |
+| 取款               | withdrawui,withdrawbl,withdrawdata <br> cardui,cardbl,carddata <br> atmui,atmbl,atmdata <br> |
+| 存款               | depositui,depositbl,depositdata <br> cardui,cardbl,carddata <br> atmui,atmbl,atmdata <br>                             |
+| 查询               | searchui,searchbl,searchdata <br> cardui,cardbl,carddata <br>                                                         |
+| 转账               | transferui,transferbl,transferdata <br> cardui,cardbl,carddata <br>                          |
+| 设置               | settingsui,settingsbl,settingsdata <br> cardui,cardbl,carddata <br>                                                   |
+| 银行卡账户信息更新 | cardui,cardbl,carddata                                                                                                |
+| ATM 机信息更新     | atmui,atmbl,atmdata                                                                                                   |
 
 ### 初步包图
 
@@ -170,11 +177,19 @@ ATM 机（现金储备）\
 
 ## （五）运用类图、顺序图和状态机图，描述详细设计的结果
 
+我们这里仅对**取款需求**进行详细设计
+
 ### 关键类图
+
+![alt text](image-12.png)
 
 ### 详细顺序图
 
+![alt text](image-13.png)
+
 ### 详细状态机图
+
+![alt text](image-14.png)
 
 ## 附
 
